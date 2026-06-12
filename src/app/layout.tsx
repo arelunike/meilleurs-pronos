@@ -3,6 +3,7 @@ import { Suspense } from 'react';
 import './globals.css'
 import { Bebas_Neue, Outfit } from 'next/font/google'
 import MetaPixel from '@/components/MetaPixel/MetaPixel';
+import { Analytics } from "@vercel/analytics/next"
 
 const bebasNeue = Bebas_Neue({
   weight: '400',
@@ -89,6 +90,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#12141A" />
       </head>
       <body style={{ backgroundColor: '#12141A', color: '#ffffff', minHeight: '100vh' }}>
+        <Analytics/>
         {/* Le pixel est parfaitement isolé dans sa Suspense (Indispensable pour le build Next.js statique) */}
         <Suspense fallback={null}>
           <MetaPixel />
