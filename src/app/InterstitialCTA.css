@@ -1,0 +1,108 @@
+/* InterstitialCTA.css */
+
+.inter-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  background-color: #020617; /* Slate 950 - Assure la continuité avec le fond */
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.inter-card {
+  position: relative;
+  width: 100%;
+  max-width: 28rem;
+  padding: 3rem 1.5rem;
+  background: linear-gradient(to bottom, #1e293b, #0f172a);
+  border: 1px solid #334155;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Optionnel : un petit effet de reflet sur la carte */
+.inter-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+}
+
+.inter-icon-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1.5rem auto;
+  background-color: rgba(30, 41, 59, 0.8);
+  border: 1px solid #334155;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.inter-icon {
+  color: #eab308; /* Yellow 500 */
+}
+
+.inter-icon-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(234, 179, 8, 0.2);
+  border-radius: 50%;
+  filter: blur(15px);
+  z-index: -1;
+}
+
+.inter-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #f1f5f9;
+  margin-bottom: 1rem;
+  letter-spacing: -0.025em;
+}
+
+@media (min-width: 768px) {
+  .inter-title {
+    font-size: 1.875rem;
+  }
+}
+
+.inter-title span {
+  background: linear-gradient(to right, #facc15, #ca8a04);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.inter-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #94a3b8;
+  margin-bottom: 2rem;
+  max-width: 24rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inter-desc strong {
+  color: #e2e8f0;
+  font-weight: 600;
+}
+
+.inter-cta-wrapper {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}

@@ -1,0 +1,62 @@
+/* CtaBtn.css */
+
+.cta-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  
+  /* Dégradé émeraude premium */
+  background: linear-gradient(to right, #10b981, #059669); 
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, sans-serif;
+  
+  /* Forme et bordures */
+  border-radius: 9999px; /* Forme de pilule parfaite */
+  border: 1px solid rgba(52, 211, 153, 0.4);
+  
+  /* Ombres : Lueur externe + reflet interne (Glass effect) */
+  box-shadow: 
+    0 10px 25px -5px rgba(16, 185, 129, 0.4), 
+    inset 0 2px 4px rgba(255, 255, 255, 0.2);
+    
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+/* Animation au survol */
+.btn-whatsapp:hover {
+  transform: translateY(-3px);
+  /* Intensification de la lueur et du dégradé */
+  box-shadow: 
+    0 15px 35px -5px rgba(16, 185, 129, 0.6), 
+    inset 0 2px 4px rgba(255, 255, 255, 0.3);
+  background: linear-gradient(to right, #34d399, #10b981);
+}
+
+/* Animation au clic */
+.btn-whatsapp:active {
+  transform: translateY(1px);
+  box-shadow: 0 5px 15px -5px rgba(16, 185, 129, 0.4);
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-text {
+  letter-spacing: 0.01em;
+}

@@ -1,0 +1,79 @@
+/* FinalCTA.css */
+
+.final-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 1rem;
+  background-color: #020617; /* Slate 950 */
+  font-family: system-ui, -apple-system, sans-serif;
+  overflow: hidden;
+}
+
+.final-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 36rem;
+  padding: 3rem 2rem;
+  background: linear-gradient(to bottom, rgba(30, 41, 59, 0.6), rgba(15, 23, 42, 0.8));
+  border: 1px solid rgba(51, 65, 85, 0.5);
+  border-radius: 1.5rem;
+  backdrop-filter: blur(12px);
+  text-align: center;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* Lueur radiale douce derrière le bloc final */
+.final-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, rgba(2, 6, 23, 0) 70%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.final-title {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #f1f5f9;
+  margin-bottom: 1rem;
+  letter-spacing: -0.025em;
+}
+
+@media (min-width: 768px) {
+  .final-title {
+    font-size: 2.5rem;
+  }
+}
+
+.final-title span {
+  /* Dégradé doré/orange pour accentuer l'urgence et s'accorder avec l'émoji feu */
+  background: linear-gradient(to right, #facc15, #f97316);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.final-desc {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: #94a3b8;
+  margin-bottom: 2.5rem;
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.final-cta-wrapper {
+  position: relative;
+  z-index: 20;
+  max-width: 24rem;
+  margin: 0 auto;
+}
