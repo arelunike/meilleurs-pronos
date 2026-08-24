@@ -218,7 +218,7 @@ export default function ScaleCarousel({ winCoupons, whatsappLink }: ScaleCarouse
                       )}
 
                       {/* N'affiche le bouton play que si une vidéo existe */}
-                      {coupon.video_url && (
+                      {/* {coupon.video_url && (
                         <button
                           className="play-btn"
                           onClick={() => setActiveVideo(coupon.video_url)}
@@ -231,7 +231,7 @@ export default function ScaleCarousel({ winCoupons, whatsappLink }: ScaleCarouse
                           </span>
                           Voir le résultat
                         </button>
-                      )}
+                      )} */}
                     </div>
 
                     <div className="win-card-content">

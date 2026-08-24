@@ -38,18 +38,21 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-        <main>
-          {/* On distribue le lien à chaque composant via les props */}
-          <Hero/>
-          <div className="divider"></div>
-          
-          <InterstitialCTA whatsappLink={whatsappLink} />
-          <div className="divider"></div>
-          
-          <WhyJoin/>
-          <FinalCTA whatsappLink={whatsappLink} />
-          <StickyBar whatsappLink={whatsappLink} />
-        </main>
+      <main>
+        {/* On distribue le lien à chaque composant via les props */}
+        <Hero />
+        <div className="divider"></div>
+        <WinningCoupons whatsappLink={whatsappLink} />
+
+        <div className="divider"></div>
+
+        <InterstitialCTA whatsappLink={whatsappLink} />
+        <div className="divider"></div>
+
+        <WhyJoin />
+        <FinalCTA whatsappLink={whatsappLink} />
+        <StickyBar whatsappLink={whatsappLink} />
+      </main>
     </>
-  )
+  );
 }
