@@ -15,5 +15,5 @@ export interface WinningCoupon {
   stake: number | string;
   gain: number | string;
   image_url: string;  // Correction ici
-  video_url: string;  // Correction ici
+  video_url?: string;  // Correction ici
 }
