@@ -2,7 +2,7 @@ import { CouponData, WinningCoupon } from "@/types/dataTypes";
 
 export const COUPON_DATA: CouponData = {
   id: 1,
-  odds: 1394.88,
+  odds: 1394.887,
   stake: 20000,
   gain: 27897752.46,
   date: "03/11/2026",
