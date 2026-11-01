@@ -24,7 +24,7 @@ export default function Hero() {
       {/* Logo */}
       <div className="hero-logo">
         <Image 
-          src="/logo1.webp" 
+          src="/logo.webp" 
           alt="Logo BestPronos" 
           width={160} 
           height={160} 
