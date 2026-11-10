@@ -7,9 +7,9 @@ export const COUPON_DATA: CouponData = {
   gain: 21693706.34,
   date: "12/11/2026",
   image_url: "/assets/coupon_jour.webp",
-  whatsapp_link: "https://whatsapp.com/channel/0029VbBQO9YFi8xh4alTcn1e",
+  whatsapp_link: "https://whatsapp.com/channel/0029VbCqzar7DAWxI3NmgH01",
 };
-
+//Analyse Fiable R700 : https://whatsapp.com/channel/0029VbBQO9YFi8xh4alTcn1e
 export const WONNING_COUPONS: WinningCoupon[] = [
   {
     id: 0,
